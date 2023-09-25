@@ -1,4 +1,3 @@
-# Untitled
 
 ### How to generate a SSH key.
 
@@ -6,21 +5,24 @@
 
 Example: 
 
-![pwd.png](Untitled%2063756aff63c94dab9b6e5817a2b71257/pwd.png)
+![pwd.png](Images%2Fpwd.png)
+
 
 2) You then want to see all the files and directories, including hidden ones in the current directory . You do this by entering  `ls - a`  
 
 We want to access the .ssh folder, this folder is where we want to generate and store SSH key pair. 
 
-Example: 
+Example:
 
-![ls_a.png](Untitled%2063756aff63c94dab9b6e5817a2b71257/ls_a.png)
+![ls_a.png](Images%2Fls_a.png)
+
 
 3) We want to now access the .ssh directory, we do this by entering `cd .ssh` on our terminal. 
 
-Example: 
+Example:
 
-![cd_ssh.png](Untitled%2063756aff63c94dab9b6e5817a2b71257/cd_ssh.png)
+![cd_ssh.png](Images%2Fcd_ssh.png)
+
 
 4) Once you have entered the command above, you will know you are in the .ssh directory as it should show  `~/.ssh` on your terminal. We then need to enter `ssh-keygen -t rsa -b 4096 -C "prismikagurung1@gmail.com"` in order to generate a RSA key pair. 
 
@@ -38,13 +40,13 @@ When we enter this command, it will ask us to enter a file in which to save the 
 
 Example: 
 
-![key_pair_generated.png](Untitled%2063756aff63c94dab9b6e5817a2b71257/key_pair_generated.png)
+![key_pair_generated.png](Images%2Fkey_pair_generated.png)
 
 5) We can double check that the key pairs have been created by entering `ls` in the current `.ssh` directory we are in. It should show a private and a .pub keys. 
 
 Example: 
 
-![ls_keypairs.png](Untitled%2063756aff63c94dab9b6e5817a2b71257/ls_keypairs.png)
+![ls_keypairs.png](Images%2Fls_keypairs.png)
 
 ### Adding SSH key to GitHub account.
 
@@ -52,20 +54,20 @@ Example:
 
 Example: 
 
-![cat_sshkey.png](Untitled%2063756aff63c94dab9b6e5817a2b71257/cat_sshkey.png)
+![cat_sshkey.png](Images%2Fcat_sshkey.png)
 
 We go into our **GitHub account > settings > SSH & GPG** 
 
-![github_settings.png](Untitled%2063756aff63c94dab9b6e5817a2b71257/github_settings.png)
+![github_settings.png](Images%2Fgithub_settings.png)
 
 **Add new SSH key** 
 
-![ssh_key.png](Untitled%2063756aff63c94dab9b6e5817a2b71257/ssh_key.png)
+![ssh_key.png](Images%2Fssh_key.png)
 
 And we finally copy and paste our public SSH key from Git Bash. The title can be the name of your SSH key. 
 
-![ssh_key_github.png](Untitled%2063756aff63c94dab9b6e5817a2b71257/ssh_key_github.png)
+![ssh_key_github.png](Images%2Fssh_key_github.png)
 
 It should now show that your SSH key has been generated and saved on GitHub. 
 
-![key_saved.png](Untitled%2063756aff63c94dab9b6e5817a2b71257/key_saved.png)
+![key_saved.png](Images%2Fkey_saved.png)
