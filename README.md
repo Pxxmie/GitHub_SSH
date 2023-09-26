@@ -96,8 +96,7 @@ It should show that the Identity has been added as shown below:
 
 
 10) Using the command `ssh -T git@github.com 
-` enables us to test our SSH connection to GitHub. If everything is set up correctly so far, GitHub will respond with a message indicating successful authentication as shown below. 
-
+` enables us to test our SSH connection to GitHub. If everything is set up correctly so far, GitHub will respond with a message indicating successful authentication as shown below.
 
 ![authenticating_ssh_github.png](Images%2Fauthenticating_ssh_github.png)
 
@@ -107,7 +106,7 @@ It should show that the Identity has been added as shown below:
 
 12) Finally, we need to make sure Git will push the commits from your local 'main' branch to the 'main' branch in the 'origin' remote repository. We do this by entering the command `git push -u origin main`. In the picture below, we can see that a new branch has been created and all committed files has been pushed to the remote repository. 
 <br>
-![gitpush.png](Images%2Fgitpush.png)
+![git push.png](Images%2Fgitpush.png)
 
 ##### Useful Git Commands 
 
