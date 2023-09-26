@@ -80,9 +80,7 @@ We do this by entering `git init` in our git bash terminal on our Pycharm.
 $ git init
 Initialized empty Git repository in C:/Users/Prismika/PycharmProjects/GitHub_SSH/.git/
 ```
-8) Now we will need to add an SSH agent, the SSH agent manages your SSH key and holds our private keys in memory allowing us to authenticate with remote servers without having to enter your passphrase every time. 
-<br>
-In order to run the SSH agent we enter  `eval $(ssh-agent -s)` and it will assign you an agent. PID stands for Process Identifier. 
+8) Now we will need to add an SSH agent, the SSH agent manages your SSH key and holds our private keys in memory allowing us to authenticate with remote servers without having to enter your passphrase every time. In order to run the SSH agent we enter  `eval $(ssh-agent -s)` and it will assign you an agent. PID stands for Process Identifier. 
 - `eval` - execute the output of the command` $(...)` in the current shell environment.
 - `ssh-agent -s:` starts the SSH agent and prints out the necessary environment variables that need to be set. 
 
@@ -100,7 +98,6 @@ It should show that the Identity has been added as shown below:
 10) Using the command `ssh -T git@github.com 
 ` enables us to test our SSH connection to GitHub. If everything is set up correctly so far, GitHub will respond with a message indicating successful authentication as shown below. 
 
--` -T`: tells SSH not to allocate a non-interactive session.
 
 ![authenticating_ssh_github.png](Images%2Fauthenticating_ssh_github.png)
 
